@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../global/main.css" />
+
+    <title>User Registration</title>
+  </head>
+  <body>
+    <section class="container-main">
+      <div class="form-wrapper">
+        <form class="register-user">
+          <h2 class="form-title">Form</h2>
+          <div class="form-group">
+            <label for="nameUser" class="form-label">User Name</label>
+            <input
+              type="text"
+              id="nameUser"
+              name="nameUser"
+              class="form-input"
+              placeholder="Enter your name!"
+              required
+            />
+
+            <span class="error-message" id="nameUser-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="emailUser" class="form-label">Email</label>
+            <input
+              type="email"
+              id="emailUser"
+              name="emailUser"
+              class="form-input"
+              placeholder="Enter your Email!"
+              required
+            />
+
+            <span class="error-message" id="emailUser-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="passWordUser" class="form-label">PasseWord</label>
+            <input
+              type="password"
+              id="passWordUser"
+              name="passWordUser"
+              class="form-input"
+              placeholder="Enter your Password!"
+              required
+            />
+
+            <span class="error-message" id="passWordUser-error"></span>
+          </div>
+
+          <div>
+            <button type="submit" class="form-button">Register</button>
+            <button type="button" class="form-button" id="back-to-lits-users">
+              Back to list users
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="../js/validation/validation.js"></script>
+  </body>
+</html>

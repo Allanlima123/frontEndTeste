@@ -15,6 +15,7 @@ Se você ainda não tem o Git instalado, baixe e instale a versão mais recente 
 4. Navegue até a pasta do repositório clonado:
 
 cd nome-do-repositorio
+
 Agora você tem uma cópia local do repositório no seu computador.
 
 ### 2. Instalando o Live Server

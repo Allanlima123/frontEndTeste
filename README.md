@@ -1,4 +1,4 @@
-#Guia para Clonar o Repositório e Instalar o Live Server
+# Guia para Clonar o Repositório e Instalar o Live Server
 Este guia vai te ajudar a clonar um repositório Git e configurar o Live Server, uma ferramenta útil para servir arquivos HTML localmente com recarga automática.
 
 1. Clonando o Repositório Git

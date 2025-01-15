@@ -6,17 +6,15 @@ Este guia vai te ajudar a clonar um repositório Git e configurar o Live Server,
 Se você ainda não tem o Git instalado, baixe e instale a versão mais recente para o seu sistema operacional aqui.
 
 ### Passo 2: Clonando o Repositório
-Abra o terminal ou prompt de comando no seu computador.
-Navegue até o diretório onde você deseja armazenar o repositório clonado.
-Use o seguinte comando para clonar o repositório:
-bash
-Copiar código
+1. Abra o terminal ou prompt de comando no seu computador.
+2. Navegue até o diretório onde você deseja armazenar o repositório clonado.
+3. Use o seguinte comando para clonar o repositório:
+
 git clone https://github.com/usuario/nome-do-repositorio.git
 Substitua https://github.com/usuario/nome-do-repositorio.git pelo URL do repositório que você deseja clonar.
 
-Navegue até a pasta do repositório clonado:
-bash
-Copiar código
+4. Navegue até a pasta do repositório clonado:
+
 cd nome-do-repositorio
 Agora você tem uma cópia local do repositório no seu computador.
 

@@ -13,6 +13,7 @@ Se você ainda não tem o Git instalado, baixe e instale a versão mais recente 
   git clone https://github.com/Allanlima123/frontEndTeste.git
 
 4. Navegue até a pasta do repositório clonado:
+
 Agora você tem uma cópia local do repositório no seu computador.
 
 ### 2. Instalando o Live Server

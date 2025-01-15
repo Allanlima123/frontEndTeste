@@ -10,7 +10,7 @@ Se você ainda não tem o Git instalado, baixe e instale a versão mais recente 
 2. Navegue até o diretório onde você deseja armazenar o repositório clonado.
 3. Use o seguinte comando para clonar o repositório:
 
-git clone https://github.com/Allanlima123/frontEndTeste.git
+  git clone https://github.com/Allanlima123/frontEndTeste.git
 
 4. Navegue até a pasta do repositório clonado:
 

@@ -30,7 +30,7 @@ Se você ainda não tem o VS Code instalado, baixe e instale o Visual Studio Cod
 3. Na barra de pesquisa, digite "Live Server".
 3. Clique em Install para instalar a extensão Live Server.
 ### Passo 3: Usando o Live Server
-1. Após instalar a extensão, abra o arquivo index.html ou qualquer arquivo HTML do seu projeto no VS Code.
+1. Após instalar a extensão, abra o arquivo index.html que está na raiz do projeto.
 
 2. Clique com o botão direito no arquivo aberto e selecione a opção "Open with Live Server".
 Alternativamente, você pode clicar no ícone Go Live no canto inferior direito do VS Code.

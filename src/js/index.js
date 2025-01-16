@@ -4,7 +4,9 @@ const getAllUsers = async () => {
   const usersList = document.querySelector("#table-users-list");
 
   try {
-    const response = await fetch("http://localhost/backendTeste/crud_user/get.php");
+    const response = await fetch(
+      "http://localhost/backendTeste/crud_user/get.php"
+    );
     const data = await response.json();
 
     usersList.innerHTML = "";
@@ -78,14 +80,21 @@ const openUpdateModal = (user) => {
   updateForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const updateData = new FormData(updateForm);
+    const updatedUser = {
+      id: user.id,
+      name: updateForm.name.value,
+      email: updateForm.email.value,
+    };
 
     try {
       const response = await fetch(
         "http://localhost/backendTeste/crud_user/update.php",
         {
           method: "PUT",
-          body: updateData,
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(updatedUser),
         }
       );
 
@@ -93,7 +102,7 @@ const openUpdateModal = (user) => {
 
       console.log("User successfully updated", result);
       setTimeout(() => {
-        document.body.removeChild(modalContainer);
+        modalBox.classList.remove("modal");
         getAllUsers();
       }, 2000);
     } catch (error) {
@@ -105,5 +114,4 @@ const openUpdateModal = (user) => {
 btnRegisterUser.addEventListener("click", () => {
   window.location.href = "../src/cadastroUsuario/index.html";
 });
-
 document.addEventListener("DOMContentLoaded", getAllUsers);

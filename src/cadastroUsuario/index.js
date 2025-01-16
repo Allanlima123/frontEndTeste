@@ -27,7 +27,7 @@ const sendForm = async (event) => {
 
   try {
     const response = await fetch(
-      "http://localhost/backend/crud_user/create.php",
+      "http://localhost/backendTeste/crud_user/create.php",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -36,16 +36,16 @@ const sendForm = async (event) => {
     );
 
     if (response.status === 201) {
-      alert("Usuário criado com sucesso!");
+      alert("User created successfully!");
       formRegister.reset();
     }
 
     if (response && response.status === 409) {
-      showPopup("O email já está cadastrado. Tente outro.");
+      showPopup("The email is already registered. Try another one.");
     }
   } catch (error) {
-    console.error("Erro ao criar usuário:", error);
-    alert("Ocorreu um erro ao criar o usuário. Tente novamente.");
+    console.error("Error creating user: ", error);
+    alert("An error occurred while creating the user. Please try again.");
   }
 };
 

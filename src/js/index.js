@@ -4,7 +4,7 @@ const getAllUsers = async () => {
   const usersList = document.querySelector("#table-users-list");
 
   try {
-    const response = await fetch("http://localhost/backend/crud_user/get.php");
+    const response = await fetch("http://localhost/backendTeste/crud_user/get.php");
     const data = await response.json();
 
     usersList.innerHTML = "";
@@ -40,7 +40,7 @@ const deleteUser = async (userId) => {
     );
     if (confirmDelete) {
       const response = await fetch(
-        "http://localhost/backend/crud_user/delete.php",
+        "http://localhost/backendTeste/crud_user/delete.php",
         {
           method: "DELETE",
           headers: {
@@ -82,7 +82,7 @@ const openUpdateModal = (user) => {
 
     try {
       const response = await fetch(
-        "http://localhost/backend/crud_user/update.php",
+        "http://localhost/backendTeste/crud_user/update.php",
         {
           method: "PUT",
           body: updateData,
